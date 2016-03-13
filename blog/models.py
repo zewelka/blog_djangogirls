@@ -14,7 +14,7 @@ class Post(models.Model):#post na blogu
     published_date = models.DateTimeField(
             blank=True, null=True)
 
-    def publish(self):# self -tzn. konkretny artykuł do opublikowania, odwołanie do bierzącego obiektu
+    def publish(self):# self -tzn. konkretny artykuł do opublikowania, odwołanie do biezącego obiektu
         self.published_date = timezone.now()
         self.save()
 
